@@ -7,12 +7,12 @@ public class LinkedList {
         head = null;
     }
 
-    public void addFirst(Object content) {
+    public void addFirst(java.lang.constant.Constable content) {
         Node ptr = head;
         head = new Node(content,ptr);
     }
 
-    public void addLast(Object content) {
+    public void addLast(java.io.Serializable content) {
         Node last = new Node(content,null);
         if (head == null) {
             head = last;
