@@ -55,6 +55,7 @@ public class LinkedList {
         return head;
     }
 
+    // To String
     public String toString() {
         String str;
         if (head == null) {
