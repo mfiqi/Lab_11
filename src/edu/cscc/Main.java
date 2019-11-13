@@ -1,5 +1,11 @@
 package edu.cscc;
 
+/**
+ * @author musabfiqi
+ * @version 1.0
+ * 2019-12-11
+ * Linked List with Generics
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -7,9 +13,9 @@ public class Main {
         list2();
     }
 
-    // Use linked list with Strings
+    // linked list with Strings
     public static void list1() {
-        LinkedList llist = new LinkedList();
+        LinkedList<String> llist = new LinkedList();
         llist.addFirst("one");
         llist.addLast("two");
         llist.addLast("three");
@@ -26,9 +32,9 @@ public class Main {
         System.out.println(llist);
     }
 
-    // Use linked list with Integers
+    // linked list with Integers
     public static void list2() {
-        LinkedList llist = new LinkedList();
+        LinkedList<Integer> llist = new LinkedList();
         llist.addFirst(1);
         llist.addLast(2);
         llist.addLast(3);

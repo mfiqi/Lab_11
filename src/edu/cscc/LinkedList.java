@@ -1,18 +1,20 @@
 package edu.cscc;
 
-public class LinkedList {
+public class LinkedList<T> {
     private Node head;
 
     public LinkedList() {
         head = null;
     }
 
-    public void addFirst(java.lang.constant.Constable content) {
+    /**
+     * Adding and deleting First and Last
+     */
+    public void addFirst(T content) {
         Node ptr = head;
         head = new Node(content,ptr);
     }
-
-    public void addLast(java.io.Serializable content) {
+    public void addLast(T content) {
         Node last = new Node(content,null);
         if (head == null) {
             head = last;
@@ -24,7 +26,6 @@ public class LinkedList {
             ptr.setNext(last);
         }
     }
-
     public boolean deleteFirst() {
         if (head == null) {
             return false;
@@ -33,7 +34,6 @@ public class LinkedList {
             return true;
         }
     }
-
     public boolean deleateLast() {
         if (head == null) {
             return false;
@@ -50,7 +50,6 @@ public class LinkedList {
             return true;
         }
     }
-
     public Node getHead() {
         return head;
     }

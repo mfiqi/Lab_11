@@ -1,7 +1,7 @@
 package edu.cscc;
 
-public class Node {
-    private Object content;
+public class Node<T> {
+    private T content;
     private Node next;
 
     /**
@@ -9,16 +9,16 @@ public class Node {
      * @param content
      * @param next
      */
-    public Node(Object content, Node next) {
+    public Node(T content, Node next) {
         this.content = content;
         this.next = next;
     }
 
     //Setters and Getters
-    public Object getContent() {
+    public T getContent() {
         return content;
     }
-    public void setContent(Object content) {
+    public void setContent(T content) {
         this.content = content;
     }
     public Node getNext() {
